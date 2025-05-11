@@ -1,2 +1,2 @@
 # python
-Meu estudos sobre python.
+Meus estudos sobre python.
