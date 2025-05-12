@@ -1,6 +1,9 @@
+#Estruturas condicionais
+
 prim_val = input('Digite o primeiro valor: ')
 segund_val = input('Digite o segundo valor: ')
 
+#Conversao de tipo das variaveis do input
 int_prim_val = int(prim_val)
 int_segund_val = int(segund_val)
 
