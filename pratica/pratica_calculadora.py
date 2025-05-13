@@ -1,4 +1,7 @@
-continuar = ' '
+continuar = 1
+result = 0
+finaliza_txt = 'Se deseja realizar outra operção digite 1 ou se deseja finalizar o programa digite 0'
+result_txt = f'O resultado da operção é {result}.'
 operador = ['+', '-', '*', '/']
 
 while continuar:
@@ -9,11 +12,11 @@ while continuar:
         print('Você digitou uma entrada inválida!')
         continue
 
-    operador_input = input('Digite um um operadora(+ - * /): ')
-    if operador_input != operador[0] or operador_input != operador[1] or operador_input != operador[3] or operador_input != operador[4]:
+    operador_input = input('Digite um um operador(+ - * /): ')
+    if operador_input != operador[0] and operador_input != operador[1] and operador_input != operador[2] and operador_input != operador[3]:
         print('Você digitou uma entrada inválida!')
-        continue     
-    
+        continue
+
     num2 = input('Digite outro número: ')
     if num2.isdigit:
         num2 = int(num2)
@@ -23,14 +26,26 @@ while continuar:
 
     result = 0
 
-    if operador_input == operador[1]:
+    if operador_input == operador[0]:
         result = num1 + num2
-        print(f'O resultado da operção é {result}.')
-        print('Se deseja realizar outra operção digite 0')
-        print('ou se deseja finalizar o programa digite 1')
-        continuar = input()
-
-
+        print(result_txt)
+        print(finaliza_txt)
+        continuar = int(input())
     
-
+    elif operador_input == operador[1]:
+        result = num1 + num2
+        print(result_txt)
+        print(finaliza_txt)
+        continuar = int(input())
     
+    elif operador_input == operador[2]:
+        result = num1 + num2
+        print(result_txt)
+        print(finaliza_txt)
+        continuar = int(input())
+    
+    elif operador_input == operador[3]:
+        result = num1 + num2
+        print(result_txt)
+        print(finaliza_txt)
+        continuar = int(input())
