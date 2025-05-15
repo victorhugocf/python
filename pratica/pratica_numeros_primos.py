@@ -24,7 +24,6 @@ while verifica:
 contPrimo = verificaPrimo(num)
 cont = 1
 
-
 if contPrimo == 2:
     print(f'O {num:.0f} é um número primo, esses são os numeros primos antes dele são:')
     while cont < num:
