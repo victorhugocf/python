@@ -5,7 +5,7 @@ operador = ['+', '-', '*', '/']
 
 while continuar:
     num1 = input('Digite um número: ')
-    if num1.isdigit:
+    if num1.isdigit():
         num1 = int(num1)
     else:
         print('Você digitou uma entrada inválida!')
