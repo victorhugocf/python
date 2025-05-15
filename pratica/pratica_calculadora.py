@@ -1,8 +1,7 @@
 continuar = 1
-result = 0
 finaliza_txt = 'Se deseja realizar outra operção digite 1 ou se deseja finalizar o programa digite 0'
-result_txt = f'O resultado da operção é {result}.'
 operador = ['+', '-', '*', '/']
+
 
 while continuar:
     num1 = input('Digite um número: ')
@@ -28,24 +27,24 @@ while continuar:
 
     if operador_input == operador[0]:
         result = num1 + num2
-        print(result_txt)
+        print(f'O resultado da operação é {result}.')
         print(finaliza_txt)
-        continuar = int(input())
+        continuar = int(input())       
     
     elif operador_input == operador[1]:
         result = num1 + num2
-        print(result_txt)
+        print(f'O resultado da operação é {result}.')
         print(finaliza_txt)
         continuar = int(input())
     
     elif operador_input == operador[2]:
         result = num1 + num2
-        print(result_txt)
+        print(f'O resultado da operação é {result}.')
         print(finaliza_txt)
         continuar = int(input())
     
     elif operador_input == operador[3]:
         result = num1 + num2
-        print(result_txt)
+        print(f'O resultado da operação é {result}.')
         print(finaliza_txt)
         continuar = int(input())
