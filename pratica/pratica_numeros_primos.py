@@ -5,6 +5,8 @@ def verificaPrimo(x):
         if x % cont == 0:
             contPrimo += 1
             cont += 1
+        elif contPrimo > 2:
+            cont = x
         else:
             cont += 1
     return contPrimo
@@ -25,7 +27,7 @@ contPrimo = verificaPrimo(num)
 cont = 1
 
 if contPrimo == 2:
-    print(f'O {num:.0f} é um número primo, esses são os numeros primos antes dele são:')
+    print(f'O {num:.0f} é um número primo, os numeros primos antes dele são:')
     while cont < num:
         contPrimo = verificaPrimo(cont)
         if contPrimo == 2:
