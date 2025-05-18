@@ -26,7 +26,7 @@ arr4 = ordenacao(arr1)
 arr5 = ordenacao(arr2)
 arr6 = ordenacao(arr3)
 
-print('---------------')
+print('-----------------')
 
 print(arr4)
 print(arr5)
