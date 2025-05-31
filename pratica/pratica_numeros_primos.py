@@ -27,7 +27,7 @@ contPrimo = verificaPrimo(num)
 cont = 1
 
 if contPrimo == 2:
-    print(f'O {num:.0f} é um número primo, os numeros primos antes dele são:')
+    print(f'O número {num:.0f} é um número primo, os numeros primos antes dele são:')
     while cont < num:
         contPrimo = verificaPrimo(cont)
         if contPrimo == 2:
@@ -36,7 +36,7 @@ if contPrimo == 2:
         else:
             cont += 1
 else:
-    print(f'O {num:.0f} não é um número primo, eos numeros primos antes dele são:')
+    print(f'O número {num:.0f} não é um número primo, os numeros primos antes dele são:')
     while cont < num:
         contPrimo = verificaPrimo(cont)
         if contPrimo == 2:
