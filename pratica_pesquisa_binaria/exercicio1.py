@@ -37,6 +37,8 @@ def pesquisa(lista, item):
         else:
             baixo = meio + 1
 
+    return None
+
 
 def verifica_posicao(lista, item):
     item = int(item)
@@ -48,8 +50,6 @@ def verifica_posicao(lista, item):
     else:
         print(f'O número {item} está na posição {posicao} da lista.')
         return posicao
-
-lista = []
 
 #for _ in range(30): Gerar uma lista com 30 índices aleatórios (com pretições).
 #    lista.append(random.randint(1, 50))
