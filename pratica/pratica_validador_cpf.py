@@ -31,7 +31,7 @@ cpf_entrada = input('Digite o cpf: ')
 verifica_cpf = cpf_entrada == cpf_entrada[0] * len(cpf_entrada) #Verifica se o cpf digitado é composto por números repetidos.
 
 if verifica_cpf:
-    print('Você digito uma entrada sequencial!')
+    print('Você digitou uma entrada sequencial!')
     sys.exit #Encerra o programa se as entradas forem sequenciais. Preciso ver mais sobre essa biblioteca.
 
 else:
