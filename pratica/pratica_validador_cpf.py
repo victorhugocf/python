@@ -32,10 +32,10 @@ verifica_cpf = cpf_entrada == cpf_entrada[0] * len(cpf_entrada) #Verifica se o c
 
 if verifica_cpf:
     print('Você digitou uma entrada sequencial!')
-    sys.exit #Encerra o programa se as entradas forem sequenciais. Preciso ver mais sobre essa biblioteca.
+    sys.exit #Encerra o programa se as entradas forem sequenciais. Preciso ver mais sobre esse módulo.
 
 else:
-    cpf = re.sub(r'[^0-9]', '', cpf_entrada) #Substituir qualquer coisa que não seja um número na entrada. Preciso ver mais sobre essa biblioteca.
+    cpf = re.sub(r'[^0-9]', '', cpf_entrada) #Substituir qualquer coisa que não seja um número na entrada. Preciso ver mais sobre esse módulo.
 
     lista_cpf = list(cpf)
     lista_cpf_int = [int(x) for x in lista_cpf]
