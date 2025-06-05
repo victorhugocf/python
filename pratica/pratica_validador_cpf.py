@@ -1,3 +1,6 @@
+import re
+import sys
+
 def verifica_primeiro_digito(lista):
     soma = 0
     cont = 0
@@ -24,15 +27,23 @@ def verifica_segundo_digito(lista):
 
     return digito
 
-cpf = input('Digite o cpf: ')
+cpf_entrada = input('Digite o cpf: ')
+verifica_cpf = cpf_entrada == cpf_entrada[0] * len(cpf_entrada) #Verifica se o cpf digitado é composto por números repetidos.
 
-lista_cpf = list(cpf)
-lista_cpf_int = [int(x) for x in lista_cpf]
+if verifica_cpf:
+    print('Você digito uma entrada sequencial!')
+    sys.exit #Encerra o programa se as entradas forem sequenciais. Preciso ver mais sobre essa biblioteca.
 
-primeiro_digito = verifica_primeiro_digito(lista_cpf_int)
-segundo_digito = verifica_segundo_digito(lista_cpf_int)
-
-if lista_cpf_int[9] == primeiro_digito and lista_cpf_int[10] == segundo_digito:
-    print(f'{cpf} é válido')
 else:
-    print('CPF é inválido')
+    cpf = re.sub(r'[^0-9]', '', cpf_entrada) #Substituir qualquer coisa que não seja um número na entrada. Preciso ver mais sobre essa biblioteca.
+
+    lista_cpf = list(cpf)
+    lista_cpf_int = [int(x) for x in lista_cpf]
+
+    primeiro_digito = verifica_primeiro_digito(lista_cpf_int)
+    segundo_digito = verifica_segundo_digito(lista_cpf_int)
+
+    if lista_cpf_int[9] == primeiro_digito and lista_cpf_int[10] == segundo_digito:
+        print(f'{cpf_entrada} é um CPF válido')
+    else:
+        print('CPF é inválido')
