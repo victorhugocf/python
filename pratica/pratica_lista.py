@@ -1,4 +1,4 @@
-lista = ['Leite', 'Arroz', 'Feijão', 'Batata']
+lista = []
 verifica = 1
 
 
