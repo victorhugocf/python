@@ -6,11 +6,11 @@ import random
 
 def quicksort(lista):
     if len(lista) < 2:
-        return lista #Caso base
+        return lista
     else:
         pivo = lista[len(lista) - 1]
-        menores = [i for i in lista[1:] if i <= pivo]
-        maiores = [i for i in lista[1:] if i > pivo]
+        menores = [i for i in lista[:-1] if i <= pivo]
+        maiores = [i for i in lista[:-1] if i > pivo]
 
         return quicksort(menores) + [pivo] + quicksort(maiores)
     
