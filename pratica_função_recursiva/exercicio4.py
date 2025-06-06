@@ -4,15 +4,17 @@
 
 import random
 
+cont = 1
+
 def quicksort(lista):
     if len(lista) < 2:
         return lista
     else:
-        pivo = lista[len(lista) - 1]
+        pivo = lista[-1]
         menores = [i for i in lista[:-1] if i <= pivo]
         maiores = [i for i in lista[:-1] if i > pivo]
 
-        return quicksort(menores) + [pivo] + quicksort(maiores)
+        return quicksort(menores) + [pivo] + quicksort(maiores), 
     
 lista = random.sample(range(1, 50), 10)
 
