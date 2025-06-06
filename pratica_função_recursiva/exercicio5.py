@@ -1,3 +1,5 @@
+#Adapte a função QuickSort para contar quantas vezes a função recursiva é chamada durante a ordenação de um vetor.
+
 import random
 
 def quicksort_com_contagem(lista):
