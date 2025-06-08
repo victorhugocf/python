@@ -9,7 +9,7 @@ def quicksort(lista):
 
          return quicksort(menores) + [pivo] + quicksort(maiores)
     
-lista = [4, 5, 3, 4, 4, 2, 1, 3]
+lista = [5, 3]
 
 nova_lista = quicksort(lista)
 
