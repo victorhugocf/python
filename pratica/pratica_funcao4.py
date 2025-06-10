@@ -22,3 +22,7 @@ print(list)
 
 print(apply_square(list, square_of))
 print(apply_square(list, half))
+
+palavra = 'radar'
+
+print(palavra[::-1])
