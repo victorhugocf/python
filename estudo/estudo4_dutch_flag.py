@@ -10,7 +10,7 @@ def dutch_flag(lista):
             meio += 1
         elif lista[meio] == 1: #Verifica o digito e mantém a posição dele encrementando a variável meio para continuar percorrendo o vetor, se o digito for 1.
             meio += 1
-        else: #Verifica o digito a loca ele no fim da lista se o digito for 2.
+        else: #Verifica o digito aloca ele no fim da lista se o digito for 2.
             lista[meio], lista[alto] = lista[alto], lista[meio]
             alto -= 1
         
