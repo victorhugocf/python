@@ -9,9 +9,9 @@ def sort_strigns(list):
         bigger = [i for i in list[:-1] if len(i) > pivot]
         equal = [i for i in list[:-1] if len(i) == pivot]
 
-        return sort_strigns(minor) + sorted(equal + [list[-1]], key=lambda x: (x)) + sort_strigns(bigger)
+        return sort_strigns(minor) + sorted(equal + [list[-1]]) + sort_strigns(bigger)
 
-list = ['maçã', 'batata', 'pera', 'goiaba', 'melão', 'cenoura', 'abacati', 'abacate', 'pindamonhangaba']
+list = ['maçã', 'batata', 'pera', 'goiaba', 'melão', 'cenoura', 'abacaxi', 'abacate', 'pindamonhangaba']
 
 new_list = sort_strigns(list)
 
